@@ -1,0 +1,100 @@
+@keyframes headerAnimation {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+    padding: var(--navbar-padding-y) 0;
+    --navbar-padding-y: 30px;
+
+    @include md {
+        --navbar-padding-y: 24px;
+    }
+
+    @include sm {
+        --navbar-padding-y: 20px;
+    }
+
+    &.position-fixed {
+        position: fixed;
+        animation: headerAnimation .5s linear;
+        background-color: rgba($color: $bg, $alpha: .70);
+        backdrop-filter: blur(10px);
+        --navbar-padding-y: 24px;
+
+        @include md {
+            --navbar-padding-y: 20px;
+        }
+
+        @include sm {
+            --navbar-padding-y: 1rem;
+        }
+    }
+
+    &-menu {
+        @include mmd {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba($color: $bg, $alpha: .90);
+            padding: 24px;
+            z-index: 9;
+            transform: translateY(150%);
+            @include transition;
+
+            &.show-menu {
+                transform: translate(0, 0);
+            }
+        }
+
+        @include sm {
+            padding: 16px;
+        }
+    }
+
+    &-link {
+        padding: 10px 20px;
+        cursor: pointer;
+
+        @include lg {
+            padding: 10px 8px;
+        }
+
+        @include mmd {
+            padding: 9px 5px;
+            display: block;
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    a.active {
+        color: $white;
+    }
+
+    &-toggler {
+        color: $heading;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

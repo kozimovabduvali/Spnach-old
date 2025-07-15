@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #03F5A5;
+    --color-heading: #032F20;
+    --color-stroke: #28272C;
+    --breakpoint-xs: 390px;
+    --breakpoint-sm: 414px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1240px;
+    --breakpoint-2xl: 1340px;
+    --breakpoint-3xl: 1400px;
+    --breakpoint-4xl: 1552px;
+    --font-quicksand: "Quicksand", sans-serif;
+    --font-dela: "Dela Gothic One", sans-serif;
+    --font-dovens: 'DOVENS Personal Use', sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-londrina: 'Londrina Solid', sans-serif;
+    --font-dm: "DM Sans", sans-serif;
+    --font-luckiest: "Luckiest Guy", cursive;
+}
+
+
+@layer base {
+    .btn {
+        @apply inline-flex items-center justify-center gap-2 rounded-xl text-sm lg:text-base !leading-normal px-7 min-h-12 md:min-h-14 lg:min-h-15 hover:scale-105;
+    }
+}

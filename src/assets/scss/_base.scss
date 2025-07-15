@@ -1,0 +1,143 @@
+@layer base {
+    body {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: calc(26px/16px);
+        color: $text;
+        font-family: $font-1;
+        background-color: $bg;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $font-2;
+        color: $heading;
+        font-weight: 500;
+    }
+
+    h2 {
+        text-shadow: 1px 2px 0px #000;
+        -webkit-text-stroke-width: 0.4px;
+        -webkit-text-stroke-color: #000;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        @include transition;
+    }
+
+    input,
+    textarea,
+    button {
+        outline: none;
+        @include transition;
+
+        &:focus {
+            outline: none;
+            border-color: $primary;
+        }
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+}
+
+@layer components {
+    .common {
+        &-padding {
+            --padding-y: 120px;
+            --padding-x: 0;
+            padding: var(--padding-y) var(--padding-x);
+
+            @include xl {
+                --padding-y: 100px;
+            }
+
+            @include lg {
+                --padding-y: 100px;
+            }
+
+            @include md {
+                --padding-y: 80px;
+            }
+
+            @include sm {
+                --padding-y: 60px;
+            }
+
+            &-top {
+                padding-top: var(--padding-y);
+            }
+        }
+
+        &-title {
+            margin-bottom: 60px;
+
+            @include md {
+                margin-bottom: 40px;
+            }
+
+            @include sm {
+                margin-bottom: 30px;
+            }
+
+            & h2 {
+                @include font-68;
+            }
+
+            & p {
+                @include font-20;
+            }
+        }
+    }
+
+    .overflow-x-auto,
+    .overflow-y-auto {
+        @include custom-scroll(var(--scroll, 6px));
+    }
+
+    #root {
+        overflow: hidden;
+    }
+}
+
+.bg-100 {
+    background-size: 100% 100%;
+}
+
+.btn_white {
+    border-radius: 8px;
+    border: 0.4px solid #000;
+    background: #FFFFFD;
+    box-shadow: 2px 2px 0px 0px #000;
+    padding: 12px 24px;
+
+    @include lg {
+        padding: 6px 16px;
+    }
+
+    @include sm {
+        padding: 6px 12px;
+        box-shadow: 1px 1px 0px 0px #000;
+    }
+}
