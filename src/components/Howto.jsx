@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import { Container, Row, Col } from './grid';
-import video from "../assets/img/howto/video.mp4"
+import video from "../assets/img/howto/video.webm"
 import bg1 from "../assets/img/howto/bg1.png"
 import bg2 from "../assets/img/howto/bg2.png"
 import bg3 from "../assets/img/howto/bg3.png"
@@ -27,16 +27,15 @@ export default function Howto() {
     return (
         <div className="howto py-140 relative z-1  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.55]">
             <div className="absolute left-0 top-0 w-full h-full z-1">
-                <ReactPlayer
-                    src={video}
-                    playing
+                <video
+                    autoPlay
                     muted
                     loop
-                    playsinline
-                    width="100%"
-                    height="100%"
-                    className="absolute top-0 left-0 object-fill"
-                />
+                    playsInline
+                    className="absolute top-0 left-0 w-full h-full object-fill"
+                >
+                    <source src={video} type="video/mp4" />
+                </video>
             </div>
 
             <Container className='lg:absolute lg:h-auto lg:top-1/2 lg:left-1/2 lg:-translate-1/2 z-10'>
