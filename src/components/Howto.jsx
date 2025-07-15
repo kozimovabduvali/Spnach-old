@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import { Container, Row, Col } from './grid';
-import video from "../assets/img/howto/video.webm"
+import video from "../assets/img/howto/video.mp4"
 import bg1 from "../assets/img/howto/bg1.png"
 import bg2 from "../assets/img/howto/bg2.png"
 import bg3 from "../assets/img/howto/bg3.png"
