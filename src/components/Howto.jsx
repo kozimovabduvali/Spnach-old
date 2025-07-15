@@ -1,11 +1,25 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
+import React, { useEffect, useState } from 'react';
+// import ReactPlayer from 'react-player'
 import { Container, Row, Col } from './grid';
-import video from "../assets/img/howto/video.webm"
+import videoMp4  from "../assets/img/howto/video.mp4"
+import videoWebm  from "../assets/img/howto/video.webm"
 import bg1 from "../assets/img/howto/bg1.png"
 import bg2 from "../assets/img/howto/bg2.png"
 import bg3 from "../assets/img/howto/bg3.png"
 export default function Howto() {
+
+    const [isIOS, setIsIOS] = useState(false);
+
+    useEffect(() => {
+        const ua = navigator.userAgent;
+        const isIOSDevice = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+        setIsIOS(isIOSDevice);
+    }, []);
+
+    const videoSrc = isIOS ? videoMp4 : videoWebm;
+    const videoType = isIOS ? "video/mp4" : "video/webm";
+
+
     const CoinCards = [
         {
             title: "Set Up Your Solana Wallet",
@@ -34,7 +48,8 @@ export default function Howto() {
                     playsInline
                     className="w-full h-full object-cover"
                 >
-                    <source src={video} type="video/webm" />
+                    {/* Load video source based on device */}
+                    <source src={videoSrc} type={videoType} />
                 </video>
 
             </div>
