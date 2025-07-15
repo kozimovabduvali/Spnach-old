@@ -73,6 +73,6 @@ export default function About() {
       <img src={shape_1} className='absolute right-[82%] md:right-[44%] xl:right-[40%] 2xl:right-[40%] 4xl:right-[42%] bottom-26 md:bottom-50 lg:bottom-64 xl:bottom-[28%] 4xl:bottom-[40%] -z-1 ' alt="" />
       <img src={shape_2} className='absolute right-0 xl:right-9 4xl:right-50 bottom-[24%] md:bottom-[34%] xl:bottom-[50%] 4xl:bottom-[60%] -z-1' alt="" />
     </div>
-  )
+  )  
 }
  
