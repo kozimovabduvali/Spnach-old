@@ -32,10 +32,11 @@ export default function Howto() {
                     muted
                     loop
                     playsInline
-                    className="absolute top-0 left-0 w-full h-full object-fill"
+                    className="w-full h-full object-cover"
                 >
-                    <source src={video} type="video/mp4" />
+                    <source src={video} type="video/webm" />
                 </video>
+
             </div>
 
             <Container className='lg:absolute lg:h-auto lg:top-1/2 lg:left-1/2 lg:-translate-1/2 z-10'>
