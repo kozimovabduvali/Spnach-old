@@ -42,7 +42,7 @@ export default function Dropdown({ className = "", label, required, items = [], 
                 {defaultItem.code ?
                   <span className='bg-[#7281F0] size-full flex items-center justify-center text-sm text-white'>{defaultItem.icon}</span>
                   :
-                  <img src={defaultItem.icon} className=' w-full h-full object-cover' alt="" />
+                  <img src={defaultItem.icon} className=' w-full h-full object-cover' alt="Img" />
                 }
               </span>
             }
@@ -63,7 +63,7 @@ export default function Dropdown({ className = "", label, required, items = [], 
                     {item.code ?
                       <span className='bg-[#7281F0] size-full flex items-center justify-center text-sm text-white'>{item.icon}</span>
                       :
-                      <img src={item.icon} className=' w-full h-full object-cover' alt="" />
+                      <img src={item.icon} className=' w-full h-full object-cover' alt="Img" />
                     }
                   </span>
                 }

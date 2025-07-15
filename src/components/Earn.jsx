@@ -31,18 +31,18 @@ export default function Earn() {
                                         ))}
                                     </ul>
                                 </div>
-                                <img src={img2} className='pointer-events-none mt-8 lg:mt-[65px] relative xl:-left-[195px] xl:max-w-[800px] 2xl:max-w-[927px] animiupdown' alt="" />
+                                <img src={img2} className='pointer-events-none mt-8 lg:mt-[65px] relative xl:-left-[195px] xl:max-w-[800px] 2xl:max-w-[927px] animiupdown' alt="Img" />
                             </div>
                             <div className="">
                                 <p className=' max-w-[529px] mx-auto lg:ml-auto capitalize font-semibold !leading-normal text-base lg:text-lg xl:text-[20px] mb-5 xl:mb-8 2xl:mb-12'><strong className='text-[22px]'>$SPANCH</strong> is the engine behind many of our Telegram bots — including virtual numbers, payment processing, bonus systems, and other innovative features.</p>
-                                <img src={img} className='pointer-events-none' alt="" />
+                                <img src={img} className='pointer-events-none' alt="Img" />
                             </div>
                         </div>
                     </Col>
                 </Row>
             </Container>
-            <img src={shape1} className='pointer-events-none absolute bottom-0 left-0 w-full max-h-[174px]' alt="" />
-            <img src={shape2} className='pointer-events-none  -z-1 absolute top-1/2 left-1/2 -translate-1/2' alt="" />
+            <img src={shape1} className='pointer-events-none absolute bottom-0 left-0 w-full max-h-[174px]' alt="Img" />
+            <img src={shape2} className='pointer-events-none  -z-1 absolute top-1/2 left-1/2 -translate-1/2' alt="Img" />
         </div>
     )
 }

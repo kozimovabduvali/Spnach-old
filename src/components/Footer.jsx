@@ -6,7 +6,7 @@ import footershap from "../assets/img/footershap.png"
 export default function Footer() {
   return (
     <div className="footer pt-6 pb-31 md:pb-42 lg:pb-70 xl:pb-[330px] relative z-10">
-      <img className="absolute left-0 bottom-0 w-full h-[130%] -z-1" src={footershap} alt="" />
+      <img className="absolute left-0 bottom-0 w-full h-[130%] -z-1" src={footershap} alt="Img" />
       <Container>
         <Row className="justify-center">
           <Col xs={12} md={7} xl={6}>
@@ -20,7 +20,7 @@ export default function Footer() {
           </Col>
         </Row>
       </Container>
-      <img src={img} className="w-full h-[140px] md:h-[200px] lg:h-[350px] xl:h-[450px]  absolute left-0 bottom-5 lg:bottom-6 -z-[1]" alt="" />
+      <img src={img} className="w-full h-[140px] md:h-[200px] lg:h-[350px] xl:h-[450px]  absolute left-0 bottom-5 lg:bottom-6 -z-[1]" alt="Img" />
     </div>
   )
 }
