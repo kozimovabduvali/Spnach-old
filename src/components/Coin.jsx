@@ -82,7 +82,7 @@ export default function Coin() {
     ]
     return (
         <div style={{ backgroundImage: `url(${coin_bg})` }} className=" py-20 md:pt-[120px] lg:pt-[150px] xl:pt-[180px] pb-20 md:pb-[150px] lg:pb-[150px]  relative z-[1] bg-center bg-no-repeat bg-[length:100%_100%]" >
-            <img src={top} className="h-25 md:h-[150px] lg:h-[250px] xl:h-[400px] absolute top-0 left-0 w-full -z-[2]" alt="Img" />
+            <img src={top} className="h-25 md:h-[150px] lg:h-[250px] xl:h-[400px] absolute top-0 left-0 w-full -z-[2]" alt="Img" loading='lazy' />
 
             <div className="coin">
                 <Container>
@@ -121,7 +121,7 @@ export default function Coin() {
                         <Row>
                             {TokenomicsCards.map((item, idx) => (<Col key={idx} xs={6} className={`${idx === 2 || idx === 3 ? "xl:mb-0" : ""} mt-15 mb-10 md:mb-20 lg:mb-35 xl:mb-20 2xl:mb-[218px] z-2`}>
                                 <div className={`${idx % 2 == 1 ? "ml-auto" : ""}   size-[100px] md:size-[150px] lg:size-[200px] xl:size-[232px]  rounded-full relative z-[1] flex  justify-center items-center`}>
-                                    <img src={item.bg} className="w-full h-full rounded-full  left-0 top-0 absolute z-[-1]" alt="Img" />
+                                    <img src={item.bg} className="w-full h-full rounded-full  left-0 top-0 absolute z-[-1]" alt="Img" loading='lazy' />
                                     <div className="text-center">
                                         <h5 className="text-lg md:text-4xl lg:text-5xl xl:text-[55px] text-white !leading-[1.12] uppercase mb-2">{item.title}</h5>
                                         <p className="text-sm md:text-xl lg:text-2xl xl:text-3xl font-semibold !leading-[1.5] text-white">{item.des}</p>
@@ -133,8 +133,8 @@ export default function Coin() {
                 </Container>
 
             </div>
-            <img src={bottom} className="h-24 md:h-[150px] lg:h-[200px] xl:h-[245px] absolute bottom-0 left-0 w-full z-[2]" alt="Img" />
-            <img src={bobule} className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-full object-contain  -z-1" alt="Img" />
+            <img src={bottom} className="h-24 md:h-[150px] lg:h-[200px] xl:h-[245px] absolute bottom-0 left-0 w-full z-[2]" alt="Img" loading='lazy' />
+            <img src={bobule} className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-full object-contain  -z-1" alt="Img" loading='lazy' />
         </div>
     )
 }

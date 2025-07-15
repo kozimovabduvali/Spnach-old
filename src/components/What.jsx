@@ -51,7 +51,7 @@ export default function What() {
     ]
     return (
         <div className='what-area'>
-            <img src={shape} className='w-full h-30 md:h-40 xl:h-62.5' alt="Img" />
+            <img src={shape} className='w-full h-30 md:h-40 xl:h-62.5' alt="Img" loading='lazy' />
             <div className='What bg-[#6EE1F4] relative z-10 pt-15 md:pt-20 2xl:pt-32' id='what'>
                 <Container>
                     <Row className='justify-center relative z-2'>
@@ -72,11 +72,11 @@ export default function What() {
                         </Col>
                     </Row>
                 </Container>
-                <img src={c_img} className='hidden md:block absolute top-[20%] left-0 -z-10 max-w-[30%]' alt="Img" />
-                <img src={d_img} className='hidden md:block absolute top-[20%] right-10 -z-10 max-w-[30%]' alt="Img" />
+                <img src={c_img} className='hidden md:block absolute top-[20%] left-0 -z-10 max-w-[30%]' alt="Img" loading='lazy' />
+                <img src={d_img} className='hidden md:block absolute top-[20%] right-10 -z-10 max-w-[30%]' alt="Img" loading='lazy' />
                 <div className='bg-[#9FD99A] py-13.5 relative z-1'>
-                    <img src={a_img} className='hidden md:block absolute -top-[48%] xl:-top-[58%] 2xl:-top-[64%] left-0 -z-10' alt="Img" />
-                    <img src={b_img} className='hidden md:block absolute -top-[48%] xl:-top-[58%] 2xl:-top-[64%] right-0 -z-10' alt="Img" />
+                    <img src={a_img} className='hidden md:block absolute -top-[48%] xl:-top-[58%] 2xl:-top-[64%] left-0 -z-10' alt="Img" loading='lazy' />
+                    <img src={b_img} className='hidden md:block absolute -top-[48%] xl:-top-[58%] 2xl:-top-[64%] right-0 -z-10' alt="Img" loading='lazy' />
                     <Container>
                         <Row>
                             <Col xs={12}>

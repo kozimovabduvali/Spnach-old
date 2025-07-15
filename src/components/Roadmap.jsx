@@ -78,13 +78,13 @@ export default function Roadmap() {
                             <svg className='hidden md:block absolute top-[44%] left-[45%] -translate-1/2' width="526" height="1078" viewBox="0 0 526 1078" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.15 12.6913C60.7152 0.547818 159.182 -9.94412 244.526 45.2357C351.206 114.21 372.242 199.215 493.447 212.815C614.652 226.416 142.854 325.021 290.604 416.339C438.354 507.658 36.1737 554.289 6.12296 717.983C-23.9278 881.676 169.399 700.496 306.631 747.127C443.863 793.758 295.612 993.396 525 1075" stroke="black" stroke-width="5" />
                             </svg>
-                            <img src={img1} className='max-w-[120px] md:max-w-[200px] lg:max-w-max absolute bottom-0 left-0 3xl:-left-34 z-1' alt="Img" />
-                            <img src={img2} className='max-w-[120px] md:max-w-[200px] lg:max-w-max absolute bottom-0 right-0 3xl:-right-24  z-1' alt="Img" />
+                            <img src={img1} className='max-w-[120px] md:max-w-[200px] lg:max-w-max absolute bottom-0 left-0 3xl:-left-34 z-1' alt="Img" loading='lazy' />
+                            <img src={img2} className='max-w-[120px] md:max-w-[200px] lg:max-w-max absolute bottom-0 right-0 3xl:-right-24  z-1' alt="Img" loading='lazy' />
                         </div>
                     </Col>
                 </Row>
             </Container>
-            <img src={bg} className='absolute top-0 left-0 w-full -z-1' alt="Img" />
+            <img src={bg} className='absolute top-0 left-0 w-full -z-1' alt="Img" loading='lazy' />
         </div >
     )
 }

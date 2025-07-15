@@ -12,8 +12,8 @@ export default function Video() {
                 alt="video background"
             />
             <div className='absolute top-5 xl:top-20 left-1/2 -translate-x-1/2 w-[90%] flex justify-between'>
-                <img className='max-w-40 md:max-w-70 h-auto 2xl:max-w-100 object-contain' src={shap1} alt="Img" />
-                <img className='max-w-40 md:max-w-70 h-auto 2xl:max-w-100 object-contain' src={shap2} alt="Img" />
+                <img className='max-w-40 md:max-w-70 h-auto 2xl:max-w-100 object-contain' src={shap1} alt="Img" loading='lazy' />
+                <img className='max-w-40 md:max-w-70 h-auto 2xl:max-w-100 object-contain' src={shap2} alt="Img" loading='lazy' />
             </div>
             <Container>
                 <div className="player-wrapper">
