@@ -1,5 +1,5 @@
 import { Container, Row, Col } from './grid';
-import videoFile from "../assets/img/howto/bg-howtobottom.mp4";
+import videoFile from "../assets/img/howto/bg-full.mp4";
 import videoTop from "../assets/img/howto/bg-howtop.mp4";
 import bg1 from "../assets/img/howto/bg1.png"
 import bg2 from "../assets/img/howto/bg2.png"
@@ -26,31 +26,19 @@ export default function Howto() {
         },
     ]
     return (
-        <div className="howto py-140 relative z-1  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.55]">
-            <div className="absolute left-0 top-0 w-full h-full z-1">
+        <div className="howto py-90 md:py-140 relative z-20  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.55]">
+            <div className="absolute left-0 top-0 w-full h-full flex flex-col justify-between z-1 bg-red-400">
                 <video
                     autoPlay
                     muted
                     loop
                     playsInline
                     preload="auto"
-                    className="w-full h-1/2 object-fill"
+                    className="w-full h-full object-fill bg-amber-500"
                     crossOrigin="anonymous"
                     loading="lazy"
                 >
-                    <source src={videoFile} type="video/mp4" />
-                </video>
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
-                    className="w-full h-1/2 object-fill"
-                    crossOrigin="anonymous"
-                    loading="lazy"
-                >
-                    <source src={videoTop} type="video/mp4" />
+                    <source className='size-full' src={videoFile} type="video/mp4" />
                 </video>
             </div>
 
