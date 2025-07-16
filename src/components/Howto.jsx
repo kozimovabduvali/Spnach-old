@@ -1,23 +1,8 @@
-import React, { useEffect, useState } from 'react';
-// import ReactPlayer from 'react-player'
 import { Container, Row, Col } from './grid';
-import videoMp4  from "../assets/img/howto/video.mp4"
-import videoWebm  from "../assets/img/howto/video.webm"
 import bg1 from "../assets/img/howto/bg1.png"
 import bg2 from "../assets/img/howto/bg2.png"
 import bg3 from "../assets/img/howto/bg3.png"
 export default function Howto() {
-
-    const [isIOS, setIsIOS] = useState(false);
-
-    useEffect(() => {
-        const ua = navigator.userAgent;
-        const isIOSDevice = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
-        setIsIOS(isIOSDevice);
-    }, []);
-
-    const videoSrc = isIOS ? videoMp4 : videoWebm;
-    const videoType = isIOS ? "video/mp4" : "video/webm";
 
 
     const CoinCards = [
@@ -46,12 +31,12 @@ export default function Howto() {
                     muted
                     loop
                     playsInline
-                    className="w-full h-full object-fill"
+                    preload="auto"
+                    className="w-full h-full object-cover"
+                    crossOrigin="anonymous"
                 >
-                    {/* Load video source based on device */}
-                    <source src={videoSrc} type={videoType} />
+                    <source src="https://videos.pexels.com/video-files/2715412/2715412-uhd_2560_1440_30fps.mp4" type="video/mp4" />
                 </video>
-
             </div>
 
             <Container className='lg:absolute lg:h-auto lg:top-1/2 lg:left-1/2 lg:-translate-1/2 z-10'>
