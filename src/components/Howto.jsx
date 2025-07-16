@@ -1,4 +1,5 @@
 import { Container, Row, Col } from './grid';
+import videoFile from "../assets/img/howto/bg-howtobottom.mp4";
 import bg1 from "../assets/img/howto/bg1.png"
 import bg2 from "../assets/img/howto/bg2.png"
 import bg3 from "../assets/img/howto/bg3.png"
@@ -35,7 +36,7 @@ export default function Howto() {
                     className="w-full h-full object-cover"
                     crossOrigin="anonymous"
                 >
-                    <source src="https://videos.pexels.com/video-files/2715412/2715412-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+                    <source src={videoFile} type="video/mp4" />
                 </video>
             </div>
 
