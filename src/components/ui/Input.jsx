@@ -14,10 +14,10 @@ export default function Input({ className = "mb-3", inputClass = "h-11", labelCl
                 </label>
             }
             {type === 'textarea' ?
-                <textarea name={name} id={id} className={` px-3 w-full font-inter font-medium text-sm text-[#050A18] placeholder:text-[#050A18]/80 border border-solid border-[#DBDBE2] rounded-lg placeholder:transition-all placeholder:duration-300 focus:placeholder:translate-x-2 focus:placeholder:opacity-0 ${inputClass}`} placeholder={placeholder} required={required} />
+                <textarea name={name} id={id} className={`px-3 w-full font-inter font-medium text-sm text-[#050A18] placeholder:text-[#050A18]/80 border border-solid border-[#DBDBE2] rounded-lg placeholder:transition-all placeholder:duration-300 focus:placeholder:translate-x-2 focus:placeholder:opacity-0 ${inputClass}`} placeholder={placeholder} required={required} />
                 :
                 <div className="relative">
-                    <input type={newType} name={name} id={id} className={` px-3 w-full font-inter font-medium text-sm text-[#050A18] placeholder:text-[#050A18]/80 border border-solid border-[#DBDBE2] rounded-lg placeholder:transition-all placeholder:duration-300 focus:placeholder:translate-x-2 focus:placeholder:opacity-0 ${inputClass}`} placeholder={placeholder} required={required} />
+                    <input type={newType} name={name} id={id} className={`px-3 w-full font-inter font-medium text-sm text-[#050A18] placeholder:text-[#050A18]/80 border border-solid border-[#DBDBE2] rounded-lg placeholder:transition-all placeholder:duration-300 focus:placeholder:translate-x-2 focus:placeholder:opacity-0 ${inputClass}`} placeholder={placeholder} required={required} />
                     {type === 'password' &&
                         <button onClick={() => handleChange()} className='absolute top-1/2 -translate-y-1/2 right-0 px-3'>
                             {newType === 'password' ?

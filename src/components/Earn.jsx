@@ -14,7 +14,7 @@ export default function Earn() {
     ]
 
     return (
-        <div className='earn relative z-1 pt-20 md:pt-24 xl:pt-[173px] pb-12 md:pb-20 xl:pb-30'>
+        <div className='earn relative z-1 pt-20 md:pt-24 xl:pt-43.25 pb-12 md:pb-20 xl:pb-30'>
             <Container>
                 <Row>
                     <Col xs={12}>
