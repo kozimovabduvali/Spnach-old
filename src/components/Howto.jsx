@@ -35,6 +35,7 @@ export default function Howto() {
                     preload="auto"
                     className="w-full h-full object-cover"
                     crossOrigin="anonymous"
+                    loading="lazy"
                 >
                     <source src={videoFile} type="video/mp4" />
                 </video>
