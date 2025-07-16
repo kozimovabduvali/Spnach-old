@@ -1,6 +1,7 @@
 import { Container, Row, Col } from './grid';
 import videoFile from "../assets/img/howto/bg-full.mp4";
-import videoTop from "../assets/img/howto/bg-howtop.mp4";
+import videoTop from "../assets/img/howto/bg-howtobottom.mp4";
+import videoBottom from "../assets/img/howto/bg-howtop.mp4";
 import bg1 from "../assets/img/howto/bg1.png"
 import bg2 from "../assets/img/howto/bg2.png"
 import bg3 from "../assets/img/howto/bg3.png"
@@ -27,19 +28,47 @@ export default function Howto() {
     ]
     return (
         <div className="howto py-90 md:py-140 relative z-20  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.55]">
-            <div className="absolute left-0 top-0 w-full h-full flex flex-col justify-between z-1 bg-red-400">
+            <div className="absolute left-0 top-0 w-full h-full flex flex-col justify-between z-1">
                 <video
                     autoPlay
                     muted
                     loop
                     playsInline
                     preload="auto"
-                    className="w-full h-full object-cover bg-amber-500"
+                    className="hidden md:block w-full h-full object-cover"
                     crossOrigin="anonymous"
                     loading="lazy"
                 >
                     <source className='size-full' src={videoFile} type="video/mp4" />
                 </video>
+
+                {/* Mobile */}
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    className="block md:hidden w-full h-1/2 object-cover"
+                    crossOrigin="anonymous"
+                    loading="lazy"
+                >
+                    <source className='size-full' src={videoTop} type="video/mp4" />
+                </video>
+
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    className="block md:hidden w-full h-1/2 object-cover"
+                    crossOrigin="anonymous"
+                    loading="lazy"
+                >
+                    <source className='size-full' src={videoBottom} type="video/mp4" />
+                </video>
+
             </div>
 
             <Container className='lg:absolute lg:h-auto lg:top-1/2 lg:left-1/2 lg:-translate-1/2 z-10'>
