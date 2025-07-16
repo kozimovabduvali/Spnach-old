@@ -17,7 +17,7 @@ export default function Video() {
             </div>
             <Container>
                 <div className="player-wrapper">
-                    <img className='mx-auto w-[90%] translate-y-5 2xl:translate-y-20 -mt-20 xl:-mt-40' src={videoimg} alt="spanch video" />
+                    <img className='mx-auto w-[90%]' src={videoimg} alt="spanch video" />
                 </div>
             </Container>
         </div>

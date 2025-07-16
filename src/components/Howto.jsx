@@ -46,7 +46,7 @@ export default function Howto() {
                     muted
                     loop
                     playsInline
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-fill"
                 >
                     {/* Load video source based on device */}
                     <source src={videoSrc} type={videoType} />

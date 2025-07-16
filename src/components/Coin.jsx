@@ -117,7 +117,7 @@ export default function Coin() {
                     </Row>
                     <div className="relative z-2">
                         <img className="max-w-100 md:max-w-150 w-full h-auto xl:-mt-25 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  z-2 lg:hidden" src={tokenomicsimg} />
-                        <img className="w-full h-auto xl:-mt-25 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  z-2 hidden lg:block" src={tokenomicsvideo} />
+                        <img className="max-w-150 h-auto xl:-mt-25 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-2 hidden lg:block" src={tokenomicsvideo} />
                         <Row>
                             {TokenomicsCards.map((item, idx) => (<Col key={idx} xs={6} className={`${idx === 2 || idx === 3 ? "xl:mb-0" : ""} mt-15 mb-10 md:mb-20 lg:mb-35 xl:mb-20 2xl:mb-[218px] z-2`}>
                                 <div className={`${idx % 2 == 1 ? "ml-auto" : ""}   size-[100px] md:size-[150px] lg:size-[200px] xl:size-[232px]  rounded-full relative z-[1] flex  justify-center items-center`}>
