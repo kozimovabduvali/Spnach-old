@@ -34,7 +34,7 @@ export default function Howto() {
                     loop
                     playsInline
                     preload="auto"
-                    className="w-full h-full object-fill bg-amber-500"
+                    className="w-full h-full object-cover bg-amber-500"
                     crossOrigin="anonymous"
                     loading="lazy"
                 >
