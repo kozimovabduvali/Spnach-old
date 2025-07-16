@@ -33,7 +33,7 @@ export default function Howto() {
                     loop
                     playsInline
                     preload="auto"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-fill"
                     crossOrigin="anonymous"
                     loading="lazy"
                 >
