@@ -49,7 +49,7 @@ export default function Howto() {
                     loop
                     playsInline
                     preload="auto"
-                    className="block md:hidden w-full h-1/2 object-fill"
+                    className="block md:hidden w-full h-1/2 object-cover"
                     crossOrigin="anonymous"
                     loading="lazy"
                 >
@@ -62,7 +62,7 @@ export default function Howto() {
                     loop
                     playsInline
                     preload="auto"
-                    className="block md:hidden w-full h-1/2 object-fill"
+                    className="block md:hidden w-full h-1/2 object-cover"
                     crossOrigin="anonymous"
                     loading="lazy"
                 >
