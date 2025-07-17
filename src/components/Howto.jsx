@@ -1,5 +1,5 @@
 import { Container, Row, Col } from './grid';
-import videoFile from "../assets/img/howto/bg-full.webm";
+import videoFile from "../assets/img/howto/bg-full.mp4";
 import videoBg from "../assets/img/howto/howto-bg.jpg";
 import videoTop from "../assets/img/howto/howto-top.jpg";
 import videoBottom from "../assets/img/howto/howto-bottom.png";
