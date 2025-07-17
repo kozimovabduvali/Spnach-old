@@ -1,6 +1,7 @@
 
 import { Container, Row, Col } from './grid'
 import video from '../assets/img/aboutvideo.gif'
+import videoWebm from '../assets/img/aboutvideo-webm.webm'
 import shape_1 from '../assets/img/about/shape_1.png'
 import shape_2 from '../assets/img/about/shape_2.png'
 import shape_3 from '../assets/img/about/shape_3.png'
@@ -60,14 +61,23 @@ export default function About() {
           </Col>
           <Col xl={5}>
             <div className="image w-full px-10 lg:px-0 hidden 3xl:block">
-              <img src={video} className="xl:absolute -right-20 bottom-0 w-full max-w-100 mx-auto  xl:max-w-150  3xl:max-w-175" alt="Img" loading='lazy' />
+              <video
+                className="xl:absolute -right-20 bottom-0 w-full max-w-100 mx-auto  xl:max-w-150  3xl:max-w-175 hidden md:block"
+                src={videoWebm}
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+
+              </video>
             </div>
           </Col>
         </Row>
       </Container>
 
       <div className="image w-full px-10 lg:px-0 3xl:hidden">
-        <img src={video} className="xl:absolute right-0 bottom-0 w-full max-w-100 mx-auto  xl:max-w-150  3xl:max-w-180" alt="Img" loading='lazy' />
+        <img src={video} className="block 3xl:hidden xl:absolute right-0 bottom-0 w-full max-w-100 mx-auto  xl:max-w-150  3xl:max-w-180" alt="Img" loading='lazy' />
       </div>
       <img src={shape_3} className='absolute right-0 bottom-0 -z-1 md:w-[48%] lg:w-[44%] 2xl:w-[40%] object-contain' alt="Img" loading='lazy' />
       <img src={shape_1} className='absolute right-[82%] md:right-[44%] xl:right-[40%] 2xl:right-[40%] 4xl:right-[42%] bottom-26 md:bottom-50 lg:bottom-64 xl:bottom-[28%] 4xl:bottom-[40%] -z-1 ' alt="Img" loading='lazy' />
