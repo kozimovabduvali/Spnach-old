@@ -1,5 +1,5 @@
 import { Container, Row, Col } from './grid';
-import videoFile from "../assets/img/howto/bg-full.mp4";
+import videoFile from "../assets/img/howto/bg-full.webm";
 import videoBg from "../assets/img/howto/howto-bg.jpg";
 import videoTop from "../assets/img/howto/howto-top.jpg";
 import videoBottom from "../assets/img/howto/howto-bottom.png";
@@ -28,7 +28,7 @@ export default function Howto() {
         },
     ]
     return (
-        <div className="howto pb-90 py-10 md:py-140 relative z-20  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.55]">
+        <div className="howto pb-80 py-10 md:py-140 relative z-20  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.55]">
             <div className="absolute left-0 top-0 w-full h-full flex flex-col justify-between z-1">
                 <div className='relative z-10 size-full'>
                     <video
