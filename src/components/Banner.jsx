@@ -22,7 +22,7 @@ export default function Banner() {
             <img className='absolute -top-10 md:top-0 -right-10 md:right-[-155px]  max-w-15 lg:max-w-20 xl:max-w-30 -z-1 rotateanimi3' src={star3} alt="ImgBanner" />
             <div className='space-y-2.5 relative z-4'>
               <div className='lg:w-70 xl:w-110 flex justify-center items-center mx-auto h-12 md:h-15 bg-black/20 text-base md:text-xl lg:text-2xl font-bold text-[#F6C20D] leading-normal uppercase tracking-tighter rounded-lg text-center font-montserrat'>Total Burned</div>
-              <div className='bg-[#FFCC12] rounded-lg px-11 py-2 md:py-4 w-full  xl:max-w-125 block mx-auto'>
+              <div className='bg-[#FFCC12] rounded-lg px-4 italic w-full  xl:max-w-125 block mx-auto'>
                 <TimeLimit />
               </div>
             </div>
