@@ -4,6 +4,7 @@ import bg from "../assets/img/banner/bannerbg.jpg"
 import LogoSpanch from "../assets/img/banner/LogoSpanch.png"
 import bannershap from "../assets/img/banner/bannershap.png"
 import bannervideo from "../assets/img/bannervideo.gif"
+import bannervideoWebm from "../assets/img/bannervideo-webm.webm"
 import star1 from "../assets/img/banner/star1.png"
 import star2 from "../assets/img/banner/star2.png"
 import star3 from "../assets/img/banner/star3.png"
@@ -13,7 +14,7 @@ export default function Banner() {
   return (
     <div className='banner relative z-10 w-full md:h-screen flex items-center'>
       <img className='absolute top-0 left-0 w-full h-full -z-1 object-cover' src={bg} alt="ImgBanner" />
-      <img className='absolute top-[25%] xl:top-[20%] left-0 md:left-[1%] xl:left-[5%] max-w-20 md:max-w-25 xl:max-w-30 rotateanimi -z-1' src={star1} alt="ImgBanner"/>
+      <img className='absolute top-[25%] xl:top-[20%] left-0 md:left-[1%] xl:left-[5%] max-w-20 md:max-w-25 xl:max-w-30 rotateanimi -z-1' src={star1} alt="ImgBanner" />
       <img className='absolute top-[20%] right-0 md:right-[1%] xl:right-[5%]  max-w-15 md:max-w-25 xl:max-w-40 -z-1 rotateanimi4' src={star4} alt="ImgBanner" />
       <Container className='h-full'>
         <div className='relative md:absolute top-25 md:top-28 lg:top-35 left-1/2 -translate-x-1/2'>
@@ -22,7 +23,7 @@ export default function Banner() {
             <img className='absolute -top-10 md:top-0 -right-10 md:right-[-155px]  max-w-15 lg:max-w-20 xl:max-w-30 -z-1 rotateanimi3' src={star3} alt="ImgBanner" />
             <div className='space-y-2.5 relative z-4'>
               <div className='lg:w-70 xl:w-110 flex justify-center items-center mx-auto h-12 md:h-15 bg-black/20 text-base md:text-xl lg:text-2xl font-bold text-[#F6C20D] leading-normal uppercase tracking-tighter rounded-lg text-center font-montserrat'>Total Burned</div>
-              <div className='bg-[#FFCC12] rounded-lg px-4 italic w-full  xl:max-w-125 block mx-auto'>
+              <div className='bg-[#FFCC12] rounded-lg px-11 py-2 md:py-4 w-full  xl:max-w-125 block mx-auto'>
                 <TimeLimit />
               </div>
             </div>
@@ -42,7 +43,18 @@ export default function Banner() {
           <Col xs={12} md={5} className='flex items-end justify-center'>
             <div className="banner-right relative z-1">
               <div className="w-full max-w-50 md:max-w-120 lg:max-w-160 xl:max-w-193 z-2 md:mt-60">
-                <img className='max-h-150' src={bannervideo} alt="Img" />
+                <img className='max-h-150 block md:hidden' src={bannervideo} alt="Img" />
+                <video
+                  className="max-h-150 hidden md:block"
+                  src={bannervideoWebm}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  
+                </video>
+
                 {/* <div className="">
                   <ReactPlayer
                     src={bannervideo2}

@@ -9,6 +9,7 @@ import bg7 from "../assets/img/coin/bg7.png"
 import bg8 from "../assets/img/coin/bg8.png"
 import tokenomicsimg from "../assets/img/tokenomicsimg.png"
 import tokenomicsvideo from "../assets/img/tokenomicsvideo.gif"
+import tokenomicsvideoWebm from "../assets/img/tokenomicsvideoWebm.webm"
 import bottom from "../assets/img/coin/bottom-img.png"
 import top from "../assets/img/coin/top.png"
 import coin_bg from "../assets/img/coin/cain-bg.png"
@@ -116,8 +117,19 @@ export default function Coin() {
                         </Col>
                     </Row>
                     <div className="relative z-2">
-                        <img className="max-w-100 md:max-w-150 w-full h-auto xl:-mt-25 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  z-2 lg:hidden" src={tokenomicsimg} />
-                        <img className="max-w-150 h-auto xl:-mt-25 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-2 hidden lg:block" src={tokenomicsvideo} alt="Img" loading='lazy' />
+                        {/* <img className="max-w-100 md:max-w-150 w-full h-auto xl:-mt-25 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  z-2 lg:hidden" src={tokenomicsimg} /> */}
+                        <img className="max-h-150 h-auto xl:-mt-25 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-2 block md:hidden" src={tokenomicsvideo} alt="Img" loading='lazy' />
+
+                        <video
+                            className="max-h-220 h-auto xl:-mt-25 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-2 hidden md:block"
+                            src={tokenomicsvideoWebm}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                        >
+
+                        </video>
                         <Row>
                             {TokenomicsCards.map((item, idx) => (<Col key={idx} xs={6} className={`${idx === 2 || idx === 3 ? "xl:mb-0" : ""} mt-15 mb-10 md:mb-20 lg:mb-35 xl:mb-20 2xl:mb-[218px] z-2`}>
                                 <div className={`${idx % 2 == 1 ? "ml-auto" : ""}   size-[100px] md:size-[150px] lg:size-[200px] xl:size-[232px]  rounded-full relative z-[1] flex  justify-center items-center`}>

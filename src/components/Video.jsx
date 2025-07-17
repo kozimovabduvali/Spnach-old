@@ -2,6 +2,7 @@ import bg from "../assets/img/video/videobg.png";
 import shap1 from "../assets/img/video/shap1.png";
 import shap2 from "../assets/img/video/shap1.png";
 import videoimg from "../assets/img/video/OurProject.gif";
+import videoWebmMain from "../assets/img/video/videoWebmMain.webm";
 import { Container } from './grid';
 export default function Video() {
     return (
@@ -17,7 +18,17 @@ export default function Video() {
             </div>
             <Container>
                 <div className="player-wrapper">
-                    <img className='mx-auto w-[90%]' src={videoimg} alt="spanch video" />
+                    <img className='block md:hidden mx-auto w-[90%]' src={videoimg} alt="spanch video" />
+                    <video
+                        className="hidden md:block mx-auto w-[90%]"
+                        src={videoWebmMain}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                    >
+
+                    </video>
                 </div>
             </Container>
         </div>
