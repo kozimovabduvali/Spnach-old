@@ -76,7 +76,7 @@ export default function About() {
         </Row>
       </Container>
 
-      <div className="image w-full px-10 lg:px-0 md:hidden">
+      <div className="image w-full px-10 lg:px-0 lg:hidden">
         <img src={video} className="block 3xl:hidden xl:absolute right-0 bottom-0 w-full max-w-100 mx-auto  xl:max-w-150  3xl:max-w-180" alt="Img" loading='lazy' />
       </div>
       <img src={shape_3} className='absolute right-0 bottom-0 -z-1 md:w-[48%] lg:w-[44%] 2xl:w-[40%] object-contain' alt="Img" loading='lazy' />
