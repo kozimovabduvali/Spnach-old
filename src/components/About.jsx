@@ -59,10 +59,10 @@ export default function About() {
               ))}
             </div>
           </Col>
-          <Col xl={5}>
-            <div className="image w-full px-10 lg:px-0 hidden 3xl:block">
+          <Col className='mx-auto' xl={5}>
+            <div className="image w-full px-10 lg:px-0 hidden lg:block mx-auto">
               <video
-                className="xl:absolute -right-20 bottom-0 w-full max-w-100 mx-auto  xl:max-w-150  3xl:max-w-175 hidden md:block"
+                className="xl:absolute -right-20 bottom-0 w-full max-w-80 mx-auto xl:max-w-150  3xl:max-w-175 hidden md:block"
                 src={videoWebm}
                 autoPlay
                 muted
@@ -76,7 +76,7 @@ export default function About() {
         </Row>
       </Container>
 
-      <div className="image w-full px-10 lg:px-0 3xl:hidden">
+      <div className="image w-full px-10 lg:px-0 md:hidden">
         <img src={video} className="block 3xl:hidden xl:absolute right-0 bottom-0 w-full max-w-100 mx-auto  xl:max-w-150  3xl:max-w-180" alt="Img" loading='lazy' />
       </div>
       <img src={shape_3} className='absolute right-0 bottom-0 -z-1 md:w-[48%] lg:w-[44%] 2xl:w-[40%] object-contain' alt="Img" loading='lazy' />
