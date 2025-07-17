@@ -1,7 +1,8 @@
 import { Container, Row, Col } from './grid';
 import videoFile from "../assets/img/howto/bg-full.mp4";
-import videoTop from "../assets/img/howto/bg-howtobottom.mp4";
-import videoBottom from "../assets/img/howto/bg-howtop.mp4";
+import videoBg from "../assets/img/howto/howto-bg.jpg";
+import videoTop from "../assets/img/howto/howto-top.jpg";
+import videoBottom from "../assets/img/howto/howto-bottom.png";
 import bg1 from "../assets/img/howto/bg1.png"
 import bg2 from "../assets/img/howto/bg2.png"
 import bg3 from "../assets/img/howto/bg3.png"
@@ -27,54 +28,31 @@ export default function Howto() {
         },
     ]
     return (
-        <div className="howto py-90 md:py-140 relative z-20  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.55]">
+        <div className="howto pb-90 py-20 md:py-140 relative z-20  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.55]">
             <div className="absolute left-0 top-0 w-full h-full flex flex-col justify-between z-1">
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
-                    className="hidden md:block w-full h-full object-cover"
-                    crossOrigin="anonymous"
-                    loading="lazy"
-                >
-                    <source className='size-full' src={videoFile} type="video/mp4" />
-                </video>
-
-                {/* Mobile */}
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
-                    className="block md:hidden w-full h-1/2 object-cover"
-                    crossOrigin="anonymous"
-                    loading="lazy"
-                >
-                    <source className='size-full' src={videoTop} type="video/mp4" />
-                </video>
-
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
-                    className="block md:hidden w-full h-1/2 object-cover"
-                    crossOrigin="anonymous"
-                    loading="lazy"
-                >
-                    <source className='size-full' src={videoBottom} type="video/mp4" />
-                </video>
-
+                <div className='relative z-10 size-full'>
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="auto"
+                        className="hidden md:block w-full h-full object-cover"
+                        crossOrigin="anonymous"
+                        loading="lazy"
+                    >
+                        <source className='size-full' src={videoFile} type="video/mp4" />
+                    </video>
+                    <img className='relative z-0 size-full object-cover block md:hidden' src={videoBg} alt="Img" loading='lazy' />
+                    <img className='absolute bottom-0 z-10 block md:hidden' src={videoBottom} alt="Img" loading='lazy' />
+                </div>
             </div>
 
             <Container className='lg:absolute lg:h-auto lg:top-1/2 lg:left-1/2 lg:-translate-1/2 z-10'>
                 <Row>
                     <Col xl={12}>
-                        <div className="services z-3">
+                        <div className="relative z-20 services">
+                            <img className='mb-10 block md:hidden' src={videoTop} alt="Img" loading='lazy' />
                             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-6 lg:gap-7 xl:gap-8 relative z-5">
                                 {CoinCards.map((item, idx) => (
                                     <div key={idx} style={{ backgroundImage: `url(${item.bg})` }} className={`pt-20 xl:pt-35 pb-32 md:pb-23 lg:pb-30 xl:pb-55 px-5 lg:px-6 xl:px-8 bg-center bg-no-repeat bg-[length:100%_100%]`}>
