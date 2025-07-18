@@ -29,7 +29,7 @@ export default function Howto() {
         },
     ]
     return (
-        <div className="howto pb-80 py-10 md:py-140 relative z-20  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/5.5] 2xl:aspect-[1/0.8]">
+        <div className="howto pb-80 py-10 md:py-140 relative z-20  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/5.5]">
             <div className="absolute left-0 top-0 w-full h-full flex flex-col justify-between z-1">
                 <div className='relative z-10 size-full'>
                     <div className="absolute left-0 top-0 w-full h-full z-1">
