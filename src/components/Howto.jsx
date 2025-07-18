@@ -29,7 +29,7 @@ export default function Howto() {
         },
     ]
     return (
-        <div className="howto pb-80 md:pb-50 py-10 md:mb-10 relative z-20 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.30]">
+        <div className="howto pb-80 md:pb-50 py-10 md:mb-10 relative z-20 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.55] xl:aspect-[1/1.30]">
             <div className="absolute left-0 top-0 w-full h-full flex flex-col justify-between z-1">
                 <div className='relative z-10 size-full'>
                     <img className='absolute top-0 left-1/2 z-20 -translate-x-1/2 translate-y-10 hidden xl:block mx-auto' src={videoTop} alt="Img" loading='lazy' />
