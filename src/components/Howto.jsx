@@ -1,4 +1,5 @@
 import { Container, Row, Col } from './grid';
+import ReactPlayer from 'react-player';
 import videoFile from "../assets/img/howto/video.webm";
 import videoBg from "../assets/img/howto/howto-bg.jpg";
 import videoTop from "../assets/img/howto/howto-top.jpg";
@@ -31,18 +32,18 @@ export default function Howto() {
         <div className="howto pb-80 py-10 md:py-140 relative z-20  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/5.5] 2xl:aspect-[1/0.8]">
             <div className="absolute left-0 top-0 w-full h-full flex flex-col justify-between z-1">
                 <div className='relative z-10 size-full'>
-                    <video
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        preload="auto"
-                        className="hidden md:block w-full h-full object-fill"
-                        crossOrigin="anonymous"
-                        loading="lazy"
-                    >
-                        <source className='size-full' src={videoFile} type="video/mp4" />
-                    </video>
+                    <div className="absolute left-0 top-0 w-full h-full z-1">
+                        <ReactPlayer
+                            src={videoFile}
+                            playing
+                            muted
+                            loop
+                            playsinline
+                            width="100%"
+                            height="100%"
+                            className="hidden md:block absolute top-0 left-0 object-fill"
+                        />
+                    </div>
                     <img className='relative z-0 size-full object-cover block md:hidden' src={videoBg} alt="Img" loading='lazy' />
                     <img className='absolute bottom-0 z-10 block md:hidden' src={videoBottom} alt="Img" loading='lazy' />
                 </div>
