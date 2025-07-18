@@ -1,6 +1,6 @@
 import { Container, Row, Col } from './grid';
-import ReactPlayer from 'react-player';
-import videoFile from "../assets/img/howto/video.webm";
+// import ReactPlayer from 'react-player';
+// import videoFile from "../assets/img/howto/video.webm";
 import videoBg from "../assets/img/howto/howto-bg.jpg";
 import videoTop from "../assets/img/howto/howto-top.jpg";
 import videoBottom from "../assets/img/howto/howto-bottom.png";
@@ -29,23 +29,12 @@ export default function Howto() {
         },
     ]
     return (
-        <div className="howto pb-80 py-10 md:py-140 relative z-20  md:-mb-32 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.55]">
+        <div className="howto pb-80 md:pb-50 py-10 md:mb-10 relative z-20 xl:mt-0 xl:mb-0 h-full lg:aspect-[1/1.30]">
             <div className="absolute left-0 top-0 w-full h-full flex flex-col justify-between z-1">
                 <div className='relative z-10 size-full'>
-                    <div className="absolute left-0 top-0 w-full h-full z-1">
-                        <ReactPlayer
-                            src={videoFile}
-                            playing
-                            muted
-                            loop
-                            playsinline
-                            width="100%"
-                            height="100%"
-                            className="hidden md:block absolute top-0 left-0 object-fill"
-                        />
-                    </div>
-                    <img className='relative z-0 size-full object-cover block md:hidden' src={videoBg} alt="Img" loading='lazy' />
-                    <img className='absolute bottom-0 z-10 block md:hidden' src={videoBottom} alt="Img" loading='lazy' />
+                    <img className='absolute top-0 left-1/2 z-20 -translate-x-1/2 translate-y-10 hidden md:block mx-auto' src={videoTop} alt="Img" loading='lazy' />
+                    <img className='relative z-0 size-full object-cover block mx-auto' src={videoBg} alt="Img" loading='lazy' />
+                    <img className='absolute bottom-0 z-10 block w-full' src={videoBottom} alt="Img" loading='lazy' />
                 </div>
             </div>
 
@@ -53,7 +42,7 @@ export default function Howto() {
                 <Row>
                     <Col xl={12}>
                         <div className="relative z-20 services">
-                            <img className='mb-10 block md:hidden' src={videoTop} alt="Img" loading='lazy' />
+                            <img className='mb-10 block md:hidden mx-auto' src={videoTop} alt="Img" loading='lazy' />
                             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-6 lg:gap-7 xl:gap-8 relative z-5">
                                 {CoinCards.map((item, idx) => (
                                     <div key={idx} style={{ backgroundImage: `url(${item.bg})` }} className={`pt-20 xl:pt-35 pb-32 md:pb-23 lg:pb-30 xl:pb-55 px-5 lg:px-6 xl:px-8 bg-center bg-no-repeat bg-[length:100%_100%]`}>
