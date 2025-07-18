@@ -37,7 +37,7 @@ export default function Howto() {
                         loop
                         playsInline
                         preload="auto"
-                        className="hidden md:block w-full h-full object-cover"
+                        className="hidden md:block w-full h-full object-fill"
                         crossOrigin="anonymous"
                         loading="lazy"
                     >
